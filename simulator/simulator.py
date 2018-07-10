@@ -18,7 +18,7 @@ from patches_manager import *
 from movement import *
 
 from Parameter import *
-from behaviours import *
+from Behaviour import *
 
 """
 Main

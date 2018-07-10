@@ -1,6 +1,6 @@
 import time
 from pyrep import VRep
-from behaviours import *
+from Behaviour import *
 from Parameter import *
 
 # contextlib
@@ -37,8 +37,9 @@ with VRep.connect("127.0.0.1", 19997) as vrep:
 	trigger_ls = []
 	active_ls = []
 
+	trigger_index = 0
 
-
+	behaviour = Behaviour()
 	print('Simulation starts')
 	print('*************')
 	while True:
@@ -72,10 +73,10 @@ with VRep.connect("127.0.0.1", 19997) as vrep:
 			# random delay
 			idle_event_start_time, active_ls = idle_random_event(sma_list, sma_par_list, idle_event_start_time, active_ls)
 
-		#if state == 1:
+		if state == 1:
 			# propagate the action
 			# assume ONLY ONE sensor is triggered each time
-
+			active_event_start_time, active_ls = active_event(trigger_index, sma_list, sma_par_list, idle_event_start_time,)
 
 # vrep.simulation.stop()
 
