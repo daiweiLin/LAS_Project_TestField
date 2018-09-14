@@ -1,4 +1,4 @@
-# v-rep python
+# V-REP python
 
 Simple python binding for
 [Coppelia Robotics V-REP simulator](http://www.coppeliarobotics.com/) ([remote API](http://www.coppeliarobotics.com/helpFiles/en/remoteApiOverview.htm)) of version 3.3.0
