@@ -1,0 +1,1 @@
+plot(camera1.Time,camera1.Occupancy)
